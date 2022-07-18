@@ -5,6 +5,11 @@ const ConteudoStories = [
         nome: "meowed",
     },
     {
+        img: "assets/img/9gag.svg",
+        alt: "9gag",
+        nome: "9gag"
+    },
+    {
         img: "assets/img/barked.svg",
         alt: "barked",
         nome: "barked",
@@ -25,9 +30,9 @@ const ConteudoStories = [
         nome: "respondeai",
     },
     {
-        img: "assets/img/filimoderna.svg",
-        alt: "filimoderna",
-        nome: "filimoderna",
+        img: "assets/img/filomoderna.svg",
+        alt: "filomoderna",
+        nome: "filomoderna",
     },
     {
         img: "assets/img/memeriagourmet.svg", 

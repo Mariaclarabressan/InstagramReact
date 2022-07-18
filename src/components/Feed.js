@@ -28,7 +28,10 @@ function Post(props){
                 <div class="fundo">
                     <div class="acoes">
                         <div>
-                            <ion-icon name="heart-outline" onClick = {() => setLike(!like) }></ion-icon>
+                            {like ? 
+                            <ion-icon name="heart" onClick = {() => setLike(!like) }></ion-icon>:
+                            <ion-icon name="heart-outline" onClick = {() => setLike(!like) }></ion-icon>}
+                            
                             <ion-icon name="chatbubble-outline"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
