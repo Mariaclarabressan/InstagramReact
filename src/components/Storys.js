@@ -1,20 +1,66 @@
-export default function Storys() {
+const ConteudoStories = [
+    {
+        img:  "assets/img/meowed.svg",
+        alt: "meowed",
+        nome: "meowed",
+    },
+    {
+        img: "assets/img/barked.svg",
+        alt: "barked",
+        nome: "barked",
+    },
+    {
+        img: "assets/img/nathanwpylestrangeplanet.svg",
+        alt: "nathanwpylestrangeplanet",
+        nome: "nathanwpylestrangeplanet",
+    },
+    {
+        img: "assets/img/wawawicomics.svg",
+        alt: "wawawicomics",
+        nome: "wawawicomics",
+    },
+    {
+        img: "assets/img/respondeai.svg",
+        alt: "respondeai",
+        nome: "respondeai",
+    },
+    {
+        img: "assets/img/filimoderna.svg",
+        alt: "filimoderna",
+        nome: "filimoderna",
+    },
+    {
+        img: "assets/img/memeriagourmet.svg", 
+        alt: "memeriagourmet",
+        nome: "memeriagourmet",
+    },
+
+]
+
+function Story(props) {
     return (
-        <div className="storys borda">
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <div><img className="profile" src="https://i.pinimg.com/originals/1e/c4/62/1ec4624b6606c8c358e41c85ccdd20a9.jpg" /></div>
-            <ion-icon name="chevron-forward-circle"></ion-icon>
+        <div class="story">
+            <div class="imagem">
+                <img src= {props.img} alt = {props.alt} />
+            </div>
+            <div class="usuario">
+                <p>{props.nome}</p>
+            </div>
+        </div>
+    );
+}
+
+export default function Storys() {
+    
+    return (
+        <div class="stories">
+            {ConteudoStories.map((storie) => (
+                <Story img = {storie.img} alt = {storie.alt} nome = {storie.nome}/>
+            ))}
+            
+            <div class="setinha">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+            </div>
         </div>
     )
 }

@@ -1,68 +1,88 @@
 export default function Sidebar() {
     return (
-        <div className="sidebar">
-            <div className="sidebar-title">
-                <img className="profile" src="https://ovicio.com.br/wp-content/uploads/2021/07/20210712-6606aa5288ffbc242c86be44ee8384f7-1024x614.png" alt="" />
-                <div>
-                    <p>Zorin</p>
-                    <p>zorin</p>
+        <div class="sidebar">
+            <div class="usuario">
+                <img src="assets/img/catanacomics.svg" />
+                <div class="texto">
+                    <strong>catanacomics</strong>
+                    Catana
                 </div>
             </div>
-            <div className="sidebar-sugestoes">
-                <div>
-                    <span>Sugestões para você</span>
-                    <span>Ver tudo</span>
+
+            <div class="sugestoes">
+                <div class="titulo">
+                    Sugestões para você
+                    <div>Ver tudo</div>
                 </div>
-                <div className="sugestao">
-                    <div>
-                        <img className="profile" src="https://criticalhits.com.br/wp-content/uploads/2021/11/zoro-one-piece-768x400.jpg" alt="zoro1" />
-                        <div className="sugestao-texto">
-                            <p>bad.vibes.memes</p>
-                            <p>Segue você</p>
-                        </div>
-                    </div>
-                    <span>Seguir</span>
-                </div>
-                <div className="sugestao">
-                    <div>
-                        <img className="profile" src="https://criticalhits.com.br/wp-content/uploads/2021/11/zoro-one-piece-768x400.jpg" alt="zoro1" />
-                        <div className="sugestao-texto">
-                            <p>bad.vibes.memes</p>
-                            <p>Segue você</p>
-                        </div>
-                    </div>
-                    <span>Seguir</span>
-                </div>
-                <div className="sugestao">
-                    <div>
-                        <img className="profile" src="https://criticalhits.com.br/wp-content/uploads/2021/11/zoro-one-piece-768x400.jpg" alt="zoro1" />
-                        <div className="sugestao-texto">
-                            <p>bad.vibes.memes</p>
-                            <p>Segue você</p>
-                        </div>
-                    </div>
-                    <span>Seguir</span>
-                </div>
-                <div className="sugestao">
-                    <div>
-                        <img className="profile" src="https://criticalhits.com.br/wp-content/uploads/2021/11/zoro-one-piece-768x400.jpg" alt="zoro1" />
-                        <div className="sugestao-texto">
-                            <p>bad.vibes.memes</p>
-                            <p>Segue você</p>
-                        </div>
-                    </div>
-                    <span>Seguir</span>
-                </div>
+
                 <div class="sugestao">
-                    <div>
-                        <img class="profile" src="https://criticalhits.com.br/wp-content/uploads/2021/11/zoro-one-piece-768x400.jpg" alt="zoro1" />
-                        <div class="sugestao-texto">
-                            <p>bad.vibes.memes</p>
-                            <p>Segue você</p>
+                    <div class="usuario">
+                        <img src="assets/img/bad.vibes.memes.svg" />
+                        <div class="texto">
+                            <div class="nome">bad.vibes.memes</div>
+                            <div class="razao">Segue você</div>
                         </div>
                     </div>
-                    <span>Seguir</span>
+
+                    <div class="seguir">Seguir</div>
                 </div>
+
+                <div class="sugestao">
+                    <div class="usuario">
+                        <img src="assets/img/chibirdart.svg" />
+                        <div class="texto">
+                            <div class="nome">chibirdart</div>
+                            <div class="razao">Segue você</div>
+                        </div>
+                    </div>
+
+                    <div class="seguir">Seguir</div>
+                </div>
+
+                <div class="sugestao">
+                    <div class="usuario">
+                        <img src="assets/img/razoesparaacreditar.svg" />
+                        <div class="texto">
+                            <div class="nome">razoesparaacreditar</div>
+                            <div class="razao">Novo no Instagram</div>
+                        </div>
+                    </div>
+
+                    <div class="seguir">Seguir</div>
+                </div>
+
+                <div class="sugestao">
+                    <div class="usuario">
+                        <img src="assets/img/adorable_animals.svg" />
+                        <div class="texto">
+                            <div class="nome">adorable_animals</div>
+                            <div class="razao">Segue você</div>
+                        </div>
+                    </div>
+
+                    <div class="seguir">Seguir</div>
+                </div>
+
+                <div class="sugestao">
+                    <div class="usuario">
+                        <img src="assets/img/smallcutecats.svg" />
+                        <div class="texto">
+                            <div class="nome">smallcutecats</div>
+                            <div class="razao">Segue você</div>
+                        </div>
+                    </div>
+
+                    <div class="seguir">Seguir</div>
+                </div>
+            </div>
+
+            <div class="links">
+                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais
+                relevantes • Hashtags • Idioma
+            </div>
+
+            <div class="copyright">
+                © 2021 INSTAGRAM DO FACEBOOK
             </div>
         </div>
     );
